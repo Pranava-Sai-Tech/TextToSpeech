@@ -18,12 +18,12 @@ body {
   background-color: #d5d9e5;
   color: #292b2c;
   display: flex;
-  min-height: 100vh;
+  min-height: 90vh;
   align-items: center;
 }
 
 .voiceinator {
-  padding: 2rem;
+  padding: 1.5rem;
   width: 50rem;
   margin: 0 auto;
   border-radius: 1rem;
@@ -39,7 +39,7 @@ h1 {
   margin: 0 0 2rem -2rem;
   padding: 0.5rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: rem;
   font-weight: 100;
   font-family: "PT Sans", sans-serif;
 }
@@ -51,8 +51,8 @@ h1 {
   width: 100%;
   display: block;
   margin: 10px 0;
-  padding: 10px;
-  font-size: 2rem;
+  padding: 8px;
+  font-size: 1.6rem;
   background: #fbfbfc;
   outline: 0;
   font-family: "PT Sans", sans-serif;
@@ -65,7 +65,7 @@ label {
 }
 
 textarea {
-  height: 20rem;
+  height: 15rem;
 }
 
 .voiceinator button {
@@ -153,4 +153,139 @@ input[type="range"]:-moz-focusring {
 
 select::-ms-expand {
   display: none;
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin-left: 50%;
+}
+
+footer button {
+  background: #72a3da;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+footer button:hover {
+  background: #5b8cb8;
+}
+
+
+
+/* Small devices (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+  .voiceinator {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .voiceinator input,
+  .voiceinator button,
+  .voiceinator select,
+  .voiceinator textarea {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  textarea {
+    height: 15rem;
+  }
+
+  .voiceinator button {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .voiceinator {
+    width: 70%;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .voiceinator input,
+  .voiceinator button,
+  .voiceinator select,
+  .voiceinator textarea {
+    font-size: 1.8rem;
+  }
+
+  textarea {
+    height: 18rem;
+  }
+
+  .voiceinator button {
+    width: 48%;
+  }
+}
+
+/* Large devices (laptops, 900px to 1200px) */
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .voiceinator {
+    width: 70rem;
+    padding: 3.5rem;
+    font-size: 25px;
+  }
+  .voiceinator input,
+  .voiceinator button,
+  .voiceinator select,
+  .voiceinator textarea {
+    font-size:3rem;
+  }
+  label {
+    font-size: 3rem;
+  }
+  .voiceinator button {
+    font-size: 3rem;
+  }  
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.8); /* Slight transparency */
+  }
+  footer p {
+    margin-left: 20%;
+    font-size: 30px;
+  }
+}
+
+/* Extra Large devices (desktops, more than 1200px) */
+@media only screen and (min-width: 1200px) {
+  .voiceinator {
+    width: 50rem;
+  }
 }
