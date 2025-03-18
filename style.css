@@ -20,6 +20,7 @@ body {
   display: flex;
   min-height: 90vh;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .voiceinator {
@@ -42,6 +43,11 @@ h1 {
   font-size: rem;
   font-weight: 100;
   font-family: "PT Sans", sans-serif;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .voiceinator input,
@@ -155,23 +161,27 @@ select::-ms-expand {
   display: none;
 }
 
+
+
+
 /* Footer Styles */
 /* Footer Styles */
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   background: #333;
   color: #fff;
+  width: 100%;
   position: fixed;
   bottom: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 footer p {
-  margin-left: 50%;
+  margin-left: 40%;
+  font-size: 15px;
 }
 
 footer button {
